@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agrifarm - Products Page</title>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+
+<body>
+    <!-- <div id="preloader">
+        <h3>AgriFarm Getting Ready...</h3>
+    </div> -->
+    <section id="navbar">
+        <img src="logo.png" alt="logo">
+
+        <ul id="nav">
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#consultant">Consultant</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <div id="dropdown">
+                <li><a href="" id="dropmenu">More <i class="uil uil-angle-down"></i></a></li>
+                <div id="dropdown-content">
+                    <aside id="leftside">
+                        <a class="elm" id="elm-1" href="shop.html">
+                            <div class="pic" id="elm-p1"><i class="uil uil-shopping-cart"></i></div>
+                            <div class="elm-c" id="elm-c1">
+                                <h3>Shop - Agrifarm</h3>
+                                <p>It Will Redirect to Shop Page</p>
+                            </div>
+                        </a>
+                        <a class="elm" id="elm-2">
+                            <div class="pic" id="elm-p2"><i class="uil uil-tag-alt"></i></div>
+                            <div class="elm-c" id="elm-c2">
+                                <h3>Sell</h3>
+                                <p>It Will Redirect to Sell Page</p>
+                            </div>
+                        </a>
+                    </aside>
+                </div>
+            </div>
+        </ul>
+        <button id="sellbtn" onclick="sellbtn()">Become a Seller</button>
+        <i id="menu" class="uil uil-bars"></i>
+        <section id="form">
+            <div id="close"><i onclick="sellbtn()" class="uil uil-times"></i></div>
+            <form action="/Agrifarm/shop.html">
+                <div id="titlebox">
+                    <input type="text" class="blank" id="title" autocomplete="off" placeholder="Enter Title">
+                </div>
+                <div id="textbox">
+                    <textarea class="blank" id="text" name="" id="" cols="30" rows="5"
+                        placeholder="Enter Short Description"></textarea>
+                </div>
+                <div id="ratebox">
+                    <input class="blank" type="number" id="rate" pattern="\d*" maxlength="6" autocomplete="off"
+                        placeholder="Enter a Price of Product"
+                        oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" />
+                </div>
+                <div id="upload">
+                    <input type="file" name="file" id="file" placeholder="Upload File">
+                </div>
+                <button id="submit" type="submit">Submit</button>
+            </form>
+        </section>
+    </section>
+    <section id="card-container">
+        <h1>Welcone.... <span id="result"></span></h1>
+    </section>
+    <a id="backhome" href="index.html">Back to Home Page</a>
+    <!-- <script>
+        let loader = document.getElementById("preloader");
+        window.addEventListener("load", function () {
+            loader.style.display = "none";
+        })
+        
+    </script> -->
+    <script src="index.js"></script>
+</body>
+
+</html>
